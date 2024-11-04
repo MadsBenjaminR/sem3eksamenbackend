@@ -1,0 +1,55 @@
+GET {{url}}/
+
+###
+
+GET {{url}}/2
+
+###
+
+POST {{url}}/
+Content-Type: application/json
+
+{
+  "name": "Trip to the Mountains",
+  "price": 250.0,
+  "startTime": "08:00",
+  "endTime": "17:00",
+  "startPosition": "Mountain Base",
+  "category": "forest",
+  "guideId": 3
+}
+
+###
+
+PUT {{url}}/1
+Content-Type: application/json
+
+{
+  "name": "Updated Trip to the Mountains",
+  "price": 300.0,
+  "startTime": "07:00",
+  "endTime": "18:00",
+  "startPosition": "Mountain Base",
+  "category": "forest",
+  "guideId": 2
+}
+
+###
+
+DELETE {{url}}/1
+
+###
+
+PUT {{url}}/1/guides/2
+
+###
+
+GET {{url}}/guides/1
+
+###
+
+POST {{url}}/populate
+
+
+
+
